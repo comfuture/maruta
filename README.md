@@ -26,3 +26,36 @@ maturin new [path]
 
 This will create a new project in the specified path. You can then navigate to
 the [path] and start developing your Rust code.
+
+## Build the project
+
+To build development artifacts, you can run the following command:
+
+```bash
+maturin develop
+```
+
+## Using UV as a package manager
+
+To use `uv` as a package manager, you should the virtual environment in the
+project directory:
+
+```bash
+uv venv
+```
+
+At the first, you can build the pyo3 library by running the following command:
+
+```bash
+uv sync --refresh
+```
+
+After that, the shared object is not built properly, you can run the following
+command:
+
+```bash
+maturin develop --uv
+```
+
+Don't forget the `--uv` flag. because maturin will use `pip` as a package
+manager by default. `--uv` flag will use `uv` as a package manager.
