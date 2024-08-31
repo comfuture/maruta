@@ -4,6 +4,8 @@ This repository is a simple example of how to mix Rust code into Python code.
 The Rust code is compiled into a shared library and then loaded into Python
 using the `maturin` library.
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?skip_quickstart=true&machine=basicLinux32gb&repo=850242937&ref=main&devcontainer_path=.devcontainer%2Fdevcontainer.json&geo=SoutheastAsia)
+
 ## Development
 
 To build the Rust code, you need to have Rust installed. You can install Rust
